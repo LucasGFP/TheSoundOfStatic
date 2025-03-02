@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-image: url(background.png);
+  background-size: cover; /* Faz a imagem cobrir toda a tela */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Impede que a imagem se repita */
+}
+canvas {
+  display: block;
+
+  margin: 0 auto;
+}

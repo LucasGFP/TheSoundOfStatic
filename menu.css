@@ -1,0 +1,53 @@
+/* Centralizar o conteúdo na tela */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Centralizar o conteúdo do start-screen */
+#start-screen {
+  text-align: center;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Fundo escuro com transparência para melhorar a legibilidade */
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* Centralizar o título */
+#start-screen h1 {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Fazer os botões ficarem um abaixo do outro */
+button {
+  display: block;
+  width: 200px; /* Largura do botão */
+  margin: 10px auto; /* Margem automática para centralizar e espaçar os botões */
+  padding: 10px;
+  font-size: 18px;
+  background-color: #4caf50; /* Cor de fundo verde */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Efeito ao passar o mouse em cima dos botões */
+button:hover {
+  background-color: #45a049;
+}
