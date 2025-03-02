@@ -1,53 +1,41 @@
-/* Centralizar o conteúdo na tela */
-body,
+@font-face {
+  font-family: "Pixelion";
+  src: url("fonte/Pixelation.ttf") format("truetype"); /* Certifique-se de ajustar o caminho para o arquivo .ttf */
+}
+
 html {
-  height: 100%;
+  font-family: "Pixelion", sans-serif; /* Aplique a fonte Pixelion ao corpo */
+}
+body {
+  background-image: url(background.png);
   margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  justify-content: flex-start;
+  height: 100vh;
+  padding-left: 20px; /* Adiciona um pequeno espaço à esquerda */
+  font-size: 30px;
 }
 
-/* Centralizar o conteúdo do start-screen */
-#start-screen {
-  text-align: center;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Fundo escuro com transparência para melhorar a legibilidade */
-  padding: 30px;
-  border-radius: 10px;
+.yellow-text {
+  color: yellow;
 }
 
-/* Centralizar o título */
-#start-screen h1 {
-  color: white;
-  font-size: 36px;
-  margin-bottom: 20px;
+h1 {
+  margin-top: 200px; /* Ajuste o topo, se necessário */
+  font-size: 70px;
+  color: blueviolet;
 }
 
-/* Fazer os botões ficarem um abaixo do outro */
-button {
-  display: block;
-  width: 200px; /* Largura do botão */
-  margin: 10px auto; /* Margem automática para centralizar e espaçar os botões */
-  padding: 10px;
-  font-size: 18px;
-  background-color: #4caf50; /* Cor de fundo verde */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+a {
+  margin-top: 30px;
+  padding: 5px 10px; /* Adiciona espaçamento ao redor do texto */
+  text-decoration: none;
+  color: inherit;
 }
 
-/* Efeito ao passar o mouse em cima dos botões */
-button:hover {
-  background-color: #45a049;
+a:hover {
+  color: white; /* Muda a cor do texto para branco */
 }
